@@ -29,6 +29,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import cplus from "./tech/cplus.webp";
+import python from "./tech/python.webp";
+import nextjs from "./nextjs.png";
+import sass from "./tech/sass.svg";
+import vercel from "./tech/vercel.svg";
+import graphql from "./tech/graphql.svg";
 
 export {
   logo,
@@ -59,4 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  sass,
+  python,
+  vercel,
+  nextjs,
+  graphql,
+  cplus,
 };

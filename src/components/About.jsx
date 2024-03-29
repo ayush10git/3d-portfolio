@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { useSelector } from "react-redux";
 
-const ServiceCard = ({ index, name, image }) => {
+const ServiceCard = ({ index, name, image, charge, desc }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -19,16 +19,18 @@ const ServiceCard = ({ index, name, image }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="service-card bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img
             src={image.url}
             alt={name}
-            className="w-16 h-16 object-cover rounded-[50%]"
+            className="service-img w-16 h-16 object-cover rounded-[50%]"
           />
-          <h3 className="text-white text-[20px] font-bold text0-center">
+          <h3 className="service-name text-white text-[20px] font-bold text-center">
             {name}
           </h3>
+          <p className="service-charge">{charge}</p>
+          <h3 className="service-desc text-secondary">{desc}</h3>
         </div>
       </motion.div>
     </Tilt>

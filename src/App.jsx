@@ -10,6 +10,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Footer,
 } from "./components";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -52,6 +53,7 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

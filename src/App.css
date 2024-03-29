@@ -4,3 +4,26 @@ body {
   box-sizing: border-box;
 }
 
+.service-card:hover .service-name,
+.service-card:hover .service-img,
+.service-card:hover .service-charge {
+  opacity: 0; /* Hide the text, image, and paragraph on hover */
+}
+
+.service-desc {
+  visibility: hidden;
+  display: none;
+  opacity: 0; /* Initially hide the description */
+  transition: opacity 1s ease-in-out;
+}
+
+.service-card:hover .service-desc {
+  visibility: visible;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute;
+  padding: 20px; /* Position absolutely */
+  opacity: 1;
+  text-align: center;
+}

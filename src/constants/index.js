@@ -1,4 +1,3 @@
-import axios from "axios";
 import {
   mobile,
   backend,
@@ -24,6 +23,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  sass,
+  python,
+  vercel,
+  nextjs,
+  github,
+  cplus
 } from "../assets";
 
 export const navLinks = [
@@ -64,55 +69,93 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    percentage: 98,
   },
   {
     name: "CSS 3",
     icon: css,
+    percentage: 97,
   },
   {
     name: "JavaScript",
     icon: javascript,
+    percentage: 95,
   },
   {
     name: "TypeScript",
     icon: typescript,
+    percentage: 90,
   },
   {
     name: "React JS",
     icon: reactjs,
+    percentage: 90,
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+    percentage: 95,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    percentage: 99,
   },
   {
     name: "Node JS",
     icon: nodejs,
+    percentage: 92,
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    percentage: 70,
   },
   {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
+    percentage: 70,
   },
   {
     name: "figma",
     icon: figma,
+    percentage: 95,
+  },
+  {
+    name: "github",
+    icon: github,
+    percentage: 95,
+  },
+  {
+    name: "nextjs",
+    icon: nextjs,
+    percentage: 85,
+  },
+  {
+    name: "c++",
+    icon: cplus,
+    percentage: 87,
+  },
+  {
+    name: "python",
+    icon: python,
+    percentage: 86,
+  },
+  {
+    name: "vercel",
+    icon: vercel,
+    percentage: 90,
+  },
+  {
+    name: "sass",
+    icon: sass,
+    percentage: 95,
   },
   {
     name: "docker",
     icon: docker,
-  },
+    percentage: 80
+  }
 ];
 
 const experiences = [

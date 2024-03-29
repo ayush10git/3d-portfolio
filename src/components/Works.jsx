@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { projects } from "../constants";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -15,9 +16,10 @@ const ProjectCard = ({
   techStack,
   image,
   githuburl,
+  liveurl,
 }) => {
   return (
-    <motion.div >
+    <motion.div>
       <Tilt
         options={{
           max: 45,
@@ -62,6 +64,17 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+        <div className="ml-[120px] mt-4">
+          <button className="bg-tertiary py-3 px-8 ml-[-25px] outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">
+            <Link
+              to={"https://nki.tv/#!/fr/project/id/174/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live
+            </Link>
+          </button>
+        </div>
       </Tilt>
     </motion.div>
   );
@@ -79,10 +92,7 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
-          
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+        <motion.p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects my
@@ -93,7 +103,11 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {tasks.map((project, index) => (
-          <ProjectCard key={`project-${project.title}-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${project.title}-${index}`}
+            index={index}
+            {...project}
+          />
         ))}
       </div>
     </div>

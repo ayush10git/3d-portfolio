@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../style";
@@ -8,7 +8,7 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   const { items, loading, error } = useSelector((state) => state.data);
 
-  const { name } = items?.user?.about || {};
+  const { name, avatar } = items?.user?.about || {};
 
   return (
     <section className="relative w-full h-screen mx-auto">
@@ -30,6 +30,13 @@ const Hero = () => {
             I develop 3D visuals, user <br className="sm:block hidden" />{" "}
             interfaces and web applications
           </p>
+        </div>
+        <div>
+          <img
+            src={avatar?.url}
+            alt=""
+            className="h-[260px] min-w-[150px] ml-10 rounded-full border-[2px] border-[#915eff]"
+          />
         </div>
       </div>
       <ComputersCanvas />
