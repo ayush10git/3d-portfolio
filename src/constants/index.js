@@ -127,11 +127,6 @@ const technologies = [
     percentage: 95,
   },
   {
-    name: "nextjs",
-    icon: nextjs,
-    percentage: 85,
-  },
-  {
     name: "c++",
     icon: cplus,
     percentage: 87,
@@ -141,21 +136,7 @@ const technologies = [
     icon: python,
     percentage: 86,
   },
-  {
-    name: "vercel",
-    icon: vercel,
-    percentage: 90,
-  },
-  {
-    name: "sass",
-    icon: sass,
-    percentage: 95,
-  },
-  {
-    name: "docker",
-    icon: docker,
-    percentage: 80
-  }
+
 ];
 
 const experiences = [
